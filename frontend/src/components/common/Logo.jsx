@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
 
-export default function Logo({ compact = false }) {
+
+export default function Logo() {
   return (
-    <Link to="/" className="brand">
-      <span className="brand-mark">IEM</span>
-      {!compact && (
-        <span className="brand-text">
-          <strong>IEM Kolkata</strong>
-          <small>Admission System</small>
-        </span>
-      )}
-    </Link>
+    <a href="/" className="brand-logo" aria-label="IEM home">
+      <img
+        src="/images/iem-logo.png"
+        alt="Institute of Engineering & Management — Good Education, Good Jobs"
+        className="brand-logo-image"
+      />
+    </a>
   );
 }

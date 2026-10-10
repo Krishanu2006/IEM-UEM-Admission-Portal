@@ -7,6 +7,7 @@ import {
 import { Link } from "react-router-dom";
 import Logo from "../components/common/Logo";
 import PublicHeader from "../components/layout/PublicHeader";
+import Footer from "../components/layout/Footer";
 
 export default function LandingPage() {
   const journeySteps = [
@@ -122,10 +123,7 @@ export default function LandingPage() {
         ))}
       </section>
 
-      <footer className="public-footer">
-        <Logo />
-        <span>Admission Management Portal</span>
-      </footer>
+      <Footer />
     </div>
   );
 }
